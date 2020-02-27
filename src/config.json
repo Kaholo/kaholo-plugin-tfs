@@ -1,0 +1,120 @@
+{
+    "name": "TFS",
+    "type": "executer",
+    "main": "app.js",
+    "execProgram": "node",
+    "exposeRoute": false,
+    "imgUrl": "logo.png",
+    "version": "1.0.0",
+    "settings": [
+        {
+            "name": "collection",
+            "viewName": "collection URL",
+            "type": "string"
+        },
+        {
+            "name":"login",
+            "viewName": "login name",
+            "type": "string"
+        },
+        {
+            "name": "password",
+            "viewName":"password",
+            "type": "vault"
+        }
+    ],
+    "methods": [
+        {
+            "name": "get",
+            "viewName": "get",
+            "params": [
+                {
+                    "name": "workspacepath",
+                    "viewName": "workspace path",
+                    "type": "string"
+                },
+                {
+                    "name": "noprompt",
+                    "viewName": "noprompt",
+                    "type": "boolean"
+                },
+                {
+                    "name": "versionspec",
+                    "viewName": "version spec",
+                    "type": "string"
+                },
+                {
+                    "name": "overwrite",
+                    "viewName": "overwrite",
+                    "type": "boolean"
+                },
+                {
+                    "name": "force",
+                    "viewName": "force",
+                    "type": "boolean"
+                },
+                {
+                    "name": "remap",
+                    "viewName": "remap",
+                    "type": "boolean"
+                },
+                {
+                    "name": "recursive",
+                    "viewName": "recursive",
+                    "type": "boolean"
+                },
+                {
+                    "name": "preview",
+                    "viewName": "preview",
+                    "type": "boolean"
+                },
+                {
+                    "name": "noautoresolve",
+                    "viewName": "noautoresolve",
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "workfold",
+            "viewName": "Create Mapping",
+            "params":[
+                {
+                    "name": "serverfolder",
+                    "viewName": "TFS folder",
+                    "type": "string"
+                },
+                {
+                    "name": "localfolder",
+                    "viewName": "local folder",
+                    "type": "string"
+                },
+                {
+                    "name": "collection",
+                    "viewName": "collection URL",
+                    "type": "string"
+                },
+                {
+                    "name": "workspacename",
+                    "viewName": "workspace name",
+                    "type": "string"
+                },
+                {
+                    "name": "login",
+                    "viewName": "login name",
+                    "type": "string"
+                },
+                {
+                    "name": "password",
+                    "viewName": "password",
+                    "type": "vault"
+                },
+                {
+                    "name": "noprompt",
+                    "viewName": "noprompt",
+                    "type": "boolean"
+                }
+            ]
+        }
+    ]
+}
