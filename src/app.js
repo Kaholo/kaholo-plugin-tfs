@@ -55,7 +55,7 @@ function workfold(action,settings) {
         if (action.params.login || settings.login) {
             let lin = action.params.login || settings.login
             let psw = action.params.password || settings.password
-            psw ? flags.push(`/login:${lin},${psw}`) : flags.push(`/login:${lin}`)
+            psw ? flags.push(`/login:${lin},"${psw}"`) : flags.push(`/login:${lin}`)
         }
         let tf = `tf workfold ${flags.join(' ')}`
         console.log("executing:" + tf)
